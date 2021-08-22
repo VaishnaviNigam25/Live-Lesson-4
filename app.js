@@ -1,8 +1,9 @@
 var btn = document.querySelector("button");
+
 var txtinput = document.querySelector("#txt-input");
+var output = document.querySelector(".output");
 function   clickEvent(){
-console.log("clicked");
-console.log("input is  ->", txtinput.value);
+output.innerText = txtinput.value;
 }
 btn.addEventListener("click", clickEvent)
   
